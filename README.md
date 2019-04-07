@@ -28,7 +28,7 @@ The content will load with thumbnails of products.
 
 Click on any product to start a slideshow of the target product images.
 
-##NOTE: 
+## NOTE: 
 
 To just generate code for distribution/release to CI/CD builds please use 'gulp release' instead.
 
