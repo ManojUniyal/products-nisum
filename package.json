@@ -4,14 +4,16 @@
   "description": "Product carousel with detailed image scroller",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine test/spec.js"
   },
   "author": "Manoj Uniyal",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.0",
+    "gulp-jasmine": "^4.0.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-uglify-es": "^1.0.4"
+    "gulp-uglify-es": "^1.0.4",
+    "jasmine": "^3.4.0"
   },
   "dependencies": {
     "finalhandler": "^1.1.1",
@@ -19,5 +21,6 @@
     "gulp-sync": "^0.1.4",
     "readable-stream": "^3.3.0",
     "serve-static": "^1.13.2"
-  }
+  },
+  "keywords": []
 }
