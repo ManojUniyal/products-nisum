@@ -22,6 +22,8 @@ Once 'npm install' is successfull, follow the process below:
 
 Run 'gulp start-local' to start the local server.
 
+A basic test has been implemented and it will be executed before build process starts.
+
 Open browser. Type 'http://localhost:3080/'
 
 The content will load with thumbnails of products.
