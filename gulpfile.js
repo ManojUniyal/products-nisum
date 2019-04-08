@@ -10,6 +10,13 @@ let pipeline = require('readable-stream').pipeline;
 let rename = require("gulp-rename");
 let gulpsync = require("gulp-sync")(gulp);
 let exec = require('child_process').exec;
+let jasmine = require('gulp-jasmine');
+
+
+gulp.task('default', () =>
+    gulp.src('jasmine/spec/BasicTestSpec.js')
+        .pipe(jasmine())
+);
 
 gulp.task('copy-mock', function() {
 	return copyFiles("data/", "data/", "*.json");
@@ -61,6 +68,7 @@ gulp.task('release', gulp.series(
 ));
 
 gulp.task('start-local', gulp.series(
+'default',
 'copy-mock',
 'copy-template',
 'copy-style',
